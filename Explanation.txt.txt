@@ -1,0 +1,21 @@
+1. Register - Folder
+Contains all the stduents images , and their name as file name 
+
+2. Modification
+uses a pre trained haarcascade model to detect closed eyes 
+
+3.main.py 
+     3.1 Takes Class Video as input 
+     3.2 Detects students faces 
+     3.3 Compares with faces in register (using DeepFace)
+     3.4 IF found , unique id is changes to the student's name 
+     3.5 otherwise , left as unknown(UNK) until detected
+     3.6 check for anomaly , by implementing facedown : prints facedown if the student puts his or head down 
+     3.7 KEeps Track of each frame in which the student exists
+     3.8 Finaly prints the attendance of each student , based on number of frames that they appeared . 
+   
+
+4. face_find.py
+ 
+   4.1 Implementation of facedown 
+
